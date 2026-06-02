@@ -2,7 +2,7 @@
 
 A modern, responsive personal resume website showcasing my professional experience, skills, and projects.
 
-🔗 **Live:** [https://yourusername.github.io/Resume](https://yourusername.github.io/Resume)
+🔗 **Live:** [https://sonclark.github.io/Resume](https://sonclark.github.io/Resume)
 
 ## Features
 
