@@ -1,0 +1,11 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Original resume PDF (optional - remove this line if you want it in the repo)
+*.pdf

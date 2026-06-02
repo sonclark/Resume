@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyen Viet Son — Senior Software Engineer</title>
+  <meta name="description" content="Resume of Nguyen Viet Son — Senior Software Engineer specializing in React, TypeScript, Node.js, and AI-powered applications based in Singapore.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Animated background particles -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">VS<span class="accent-dot">.</span></a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#education" class="mobile-link">Education</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting reveal-up">Hello, I'm</p>
+        <h1 class="hero-name reveal-up">Nguyen Viet <span class="gradient-text">Son</span></h1>
+        <div class="hero-role-wrapper reveal-up">
+          <span class="hero-role-label">Senior Software Engineer</span>
+          <span class="hero-divider">•</span>
+          <span class="hero-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Singapore
+          </span>
+        </div>
+        <p class="hero-summary reveal-up">
+          Looking for opportunity to expand, contribute and share my knowledge in a greater scale while using my interpersonal skills to be a valuable team player.
+        </p>
+        <div class="hero-cta reveal-up">
+          <a href="#experience" class="btn btn-primary">
+            View Experience
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal-up">
+        <div class="hero-avatar-ring">
+          <div class="hero-avatar">
+            <img src="profile_photo.png" alt="Nguyen Viet Son" id="profile-img">
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-number" id="years-exp" data-count="9">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="4">0</span>
+            <span class="stat-label">Companies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-label">Languages</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-up">
+          <p>
+            I'm a <strong>Senior Software Engineer</strong> based in Singapore with <strong><span id="about-years">9</span>+ years</strong> of professional experience building web applications at scale. My expertise spans front-end development with <strong>React</strong> and <strong>TypeScript</strong>, as well as back-end systems using <strong>Node.js</strong>, <strong>Express</strong>, and <strong>Python</strong>.
+          </p>
+          <p>
+            I'm passionate about mentoring junior engineers, driving engineering culture, and researching cutting-edge technologies — from AI-powered voice transcription to intelligent code review systems. I thrive in cross-functional environments where I can bridge the gap between product vision and technical execution.
+          </p>
+        </div>
+        <div class="about-details reveal-up">
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <span class="detail-label">Experience</span>
+              <span class="detail-value" id="detail-years">9+ Years</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <span class="detail-label">Location</span>
+              <span class="detail-value">Singapore</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <div>
+              <span class="detail-label">Languages</span>
+              <span class="detail-value">English, Vietnamese</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9.75 3 12 0v-5"/></svg>
+            </div>
+            <div>
+              <span class="detail-label">Education</span>
+              <span class="detail-value">NUS, B.Comp (CS)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">Skills & Tech</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid reveal-up">
+        <div class="skill-card" data-skill="frontend">
+          <div class="skill-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="skill-title">Front-End</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Redux</span>
+            <span class="skill-tag">Webpack</span>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="backend">
+          <div class="skill-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3 class="skill-title">Back-End</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Redis</span>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="cloud">
+          <div class="skill-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          </div>
+          <h3 class="skill-title">Cloud & DevOps</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Multi-Cloud</span>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="ai">
+          <div class="skill-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.93L12 22"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.57 3.25 3.93"/><path d="M9 12h6"/><path d="M8 16h8"/><path d="M9 20h6"/></svg>
+          </div>
+          <h3 class="skill-title">AI & Automation</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">AI Integration</span>
+            <span class="skill-tag">Speech AI</span>
+            <span class="skill-tag">AI Code Review</span>
+            <span class="skill-tag">Workflow AI</span>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="leadership">
+          <div class="skill-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="skill-title">Leadership</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Mentoring</span>
+            <span class="skill-tag">Project Mgmt</span>
+            <span class="skill-tag">Code Reviews</span>
+            <span class="skill-tag">Tech Talks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">03</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <!-- Knovel Engineering -->
+        <div class="timeline-item reveal-up">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Knovel Engineering</h3>
+                <span class="timeline-role">Senior Software Engineer</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Jun 2024 — Present</span>
+                <span class="timeline-location">Singapore</span>
+              </div>
+            </div>
+            <ul class="timeline-achievements">
+              <li>Spearheaded end-to-end development of a real-time AI-powered <strong>voice transcription and translation</strong> application.</li>
+              <li>Architected high-performance backend for <strong>near real-time transcription</strong> leveraging cutting-edge speech recognition AI models.</li>
+              <li>Developed a comprehensive QA framework and integrated AI-powered workflows, improving team productivity and accelerating prototyping by <strong>up to 50%</strong>.</li>
+              <li>Designed an internal AI-powered code review script, accelerating review cycles and improving development velocity.</li>
+              <li>Led full lifecycle development of an internal CRM tool on <strong>Azure cloud</strong>.</li>
+              <li>Managed multi-cloud deployments across <strong>Azure and AWS</strong> platforms.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Handshakes SSE -->
+        <div class="timeline-item reveal-up">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Handshakes by DC Frontiers</h3>
+                <span class="timeline-role">Senior Software Engineer</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Feb 2022 — Jun 2024</span>
+                <span class="timeline-location">Singapore</span>
+              </div>
+            </div>
+            <ul class="timeline-achievements">
+              <li>Led, mentored, and coached teams of junior engineers — internal and external — fostering a high-performing culture.</li>
+              <li>Collaborated with Product and Design on project requirements, product direction, and future ideation.</li>
+              <li>Implemented robust engineering practices including code reviews and design standards, improving code quality.</li>
+              <li>Spearheaded <strong>feature toggling capability</strong>, enabling simultaneous dev & deployment of 3 different phases in a single project.</li>
+              <li>Continuously evaluated new technologies, introducing them to streamline processes and reduce time to market.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Handshakes SE2 -->
+        <div class="timeline-item reveal-up">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Handshakes by DC Frontiers</h3>
+                <span class="timeline-role">Software Engineer 2</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Sep 2019 — Feb 2022</span>
+                <span class="timeline-location">Singapore</span>
+              </div>
+            </div>
+            <ul class="timeline-achievements">
+              <li>Spearheaded the design and development of the <strong>scoutAsia platform</strong> using React, TypeScript, Express, and Redux.</li>
+              <li>Drove the strategic direction of frontend technologies, introducing best practices and coding standards.</li>
+              <li>Upgraded Webpack build system from v4 to v5, delivering a <strong>20% build time improvement</strong> and <strong>15% bundle size reduction</strong>.</li>
+              <li>Initiated and led weekly developer discussions and tech-sharing sessions to foster engineering culture.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Fuji Xerox -->
+        <div class="timeline-item reveal-up">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Fuji Xerox</h3>
+                <span class="timeline-role">Software Engineer</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Apr 2017 — Aug 2019</span>
+                <span class="timeline-location">Singapore</span>
+              </div>
+            </div>
+            <ul class="timeline-achievements">
+              <li>Designed and implemented Address Book optimizations for quicker loading, improved UX, and memory efficiency.</li>
+              <li>Developed and delivered features for the new printer system.</li>
+              <li>Implemented unit and integration testing using <strong>MochaJS</strong> and <strong>Selenium</strong>.</li>
+              <li>Researched and developed features for IoT and AI image recognition Proof of Concept projects.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">04</span>
+        <h2 class="section-title">Side Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <a href="https://midwhere.sonclark.com" target="_blank" rel="noopener noreferrer" class="project-card reveal-up" id="project-midwhere">
+          <div class="project-image">
+            <img src="midwhere_screenshot.png" alt="Midwhere - Find the middle ground">
+            <div class="project-overlay">
+              <span class="project-visit">
+                Visit Site
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-info-header">
+              <h3 class="project-name">Midwhere</h3>
+              <span class="project-link-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </span>
+            </div>
+            <p class="project-description">A web application to help friends find the optimal meeting point. Input multiple locations and discover the perfect middle ground for everyone.</p>
+            <div class="project-tags">
+              <span class="project-tag">Web App</span>
+              <span class="project-tag">Maps</span>
+              <span class="project-tag">Side Project</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">05</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="education-grid">
+        <div class="edu-card reveal-up">
+          <div class="edu-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9.75 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-details">
+            <h3 class="edu-school">National University of Singapore</h3>
+            <span class="edu-degree">Bachelor of Computing in Computer Science</span>
+            <span class="edu-year">2013 — 2017</span>
+          </div>
+        </div>
+        <div class="edu-card reveal-up">
+          <div class="edu-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9.75 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-details">
+            <h3 class="edu-school">Republic Polytechnic</h3>
+            <span class="edu-degree">Diploma in Information Technology <em>(with Merit)</em></span>
+            <span class="edu-year">2010 — 2013</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">06</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid reveal-up">
+        <a href="mailto:sonclark1@gmail.com" class="contact-card" id="contact-email">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">sonclark1@gmail.com</span>
+        </a>
+        <a href="tel:+6594701867" class="contact-card" id="contact-phone">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+65 9470 1867</span>
+        </a>
+        <a href="https://www.linkedin.com/in/nguyen-viet-son-363842120/" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-linkedin">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Connect with me</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-text">© 2025 Nguyen Viet Son. Built with passion.</span>
+      <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
