@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initDynamicYears();
   initParticles();
   initNavigation();
-  initRevealAnimations();
   initStatCounters();
   copyProfileImage();
 });
@@ -215,44 +214,6 @@ function initNavigation() {
       }
     });
   }
-}
-
-/* ============================================
-   Reveal on Scroll Animations
-   ============================================ */
-function initRevealAnimations() {
-  const reveals = document.querySelectorAll('.reveal-up');
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-          // Stagger the animation for siblings
-          const siblings = entry.target.parentElement.querySelectorAll('.reveal-up');
-          let delay = 0;
-          siblings.forEach((sib) => {
-            if (sib === entry.target) return;
-          });
-
-          setTimeout(() => {
-            entry.target.classList.add('visible');
-          }, delay);
-
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px',
-    }
-  );
-
-  reveals.forEach((el, i) => {
-    // Add staggered delay
-    el.style.transitionDelay = `${(i % 4) * 0.1}s`;
-    observer.observe(el);
-  });
 }
 
 /* ============================================
