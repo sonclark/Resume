@@ -2,7 +2,15 @@
    Nguyen Viet Son — Resume Site Scripts
    ============================================ */
 
+let particleRgb = '169, 206, 244';
+
+function updateParticleColors() {
+  const rootStyle = getComputedStyle(document.documentElement);
+  particleRgb = rootStyle.getPropertyValue('--accent-rgb').trim() || '169, 206, 244';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeSwitcher();
   initDynamicYears();
   initParticles();
   initNavigation();
@@ -110,7 +118,7 @@ function initParticles() {
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(108, 99, 255, ${p.opacity})`;
+      ctx.fillStyle = `rgba(${particleRgb}, ${p.opacity})`;
       ctx.fill();
 
       // Draw connections
@@ -123,7 +131,7 @@ function initParticles() {
           ctx.beginPath();
           ctx.moveTo(p.x, p.y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(108, 99, 255, ${0.06 * (1 - dist / 150)})`;
+          ctx.strokeStyle = `rgba(${particleRgb}, ${0.06 * (1 - dist / 150)})`;
           ctx.lineWidth = 0.5;
           ctx.stroke();
         }
@@ -133,6 +141,7 @@ function initParticles() {
     animFrame = requestAnimationFrame(draw);
   }
 
+  updateParticleColors();
   resize();
   createParticles();
   draw();
@@ -287,4 +296,23 @@ function animateCounter(el) {
   }
 
   requestAnimationFrame(update);
+}
+
+/* ============================================
+   Light/Dark Theme Switcher
+   ============================================ */
+function initThemeSwitcher() {
+  const themeToggle = document.getElementById('theme-toggle');
+  if (!themeToggle) return;
+
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    
+    // Update dynamic particle colors
+    updateParticleColors();
+  });
 }
