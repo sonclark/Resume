@@ -312,7 +312,9 @@ function initThemeSwitcher() {
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     
-    // Update dynamic particle colors
-    updateParticleColors();
+    // Update dynamic particle colors after DOM recalculates
+    setTimeout(() => {
+      updateParticleColors();
+    }, 50);
   });
 }
