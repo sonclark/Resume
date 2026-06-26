@@ -963,6 +963,53 @@ img {
   filter: brightness(0.6);
 }
 
+/* Status Badge */
+.project-status-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #fbbf24;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  border-radius: 100px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.status-pulse {
+  width: 8px;
+  height: 8px;
+  background-color: #f59e0b;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #f59e0b;
+  animation: pulse-amber 2s infinite;
+}
+
+@keyframes pulse-amber {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.text-amber {
+  color: #fbbf24;
+  font-weight: 500;
+}
+
+.project-tag.tag-warning {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
 .project-overlay {
   position: absolute;
   inset: 0;
