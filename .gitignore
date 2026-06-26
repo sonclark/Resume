@@ -8,4 +8,5 @@ Desktop.ini
 .idea/
 
 # Original resume PDF (optional - remove this line if you want it in the repo)
-*.pdf
+# *.pdf
+!Nguyen Viet Son Resume -June 2026.pdf
