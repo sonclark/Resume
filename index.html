@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css?v=7">
+  <link rel="stylesheet" href="index.css?v=8">
   <script>
     (function() {
       const savedTheme = localStorage.getItem('theme');
@@ -32,8 +32,8 @@
       <a href="#hero" class="nav-logo">VS<span class="accent-dot">.</span></a>
       <div class="nav-links">
         <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
         <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#education" class="nav-link">Education</a>
         <a href="#contact" class="nav-link">Contact</a>
@@ -68,8 +68,8 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobile-menu">
     <a href="#about" class="mobile-link">About</a>
-    <a href="#skills" class="mobile-link">Skills</a>
     <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#skills" class="mobile-link">Skills</a>
     <a href="#projects" class="mobile-link">Projects</a>
     <a href="#education" class="mobile-link">Education</a>
     <a href="#contact" class="mobile-link">Contact</a>
@@ -191,96 +191,11 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section class="section section-alt" id="skills">
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
     <div class="section-inner">
       <div class="section-header reveal-up">
         <span class="section-tag">02</span>
-        <h2 class="section-title">Skills & Tech</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="skills-grid reveal-up">
-        <div class="skill-card" data-skill="engineering">
-          <div class="skill-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          </div>
-          <h3 class="skill-title">Engineering</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">React.js</span>
-            <span class="skill-tag">TypeScript</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Express.js</span>
-            <span class="skill-tag">FastAPI</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Redis</span>
-            <span class="skill-tag">WebSocket</span>
-            <span class="skill-tag">SQL</span>
-          </div>
-        </div>
-        <div class="skill-card" data-skill="ai">
-          <div class="skill-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.93L12 22"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.57 3.25 3.93"/><path d="M9 12h6"/><path d="M8 16h8"/><path d="M9 20h6"/></svg>
-          </div>
-          <h3 class="skill-title">AI & Agentic Systems</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Agentic AI</span>
-            <span class="skill-tag">AI Workflows</span>
-            <span class="skill-tag">LLM Integration</span>
-            <span class="skill-tag">Voice AI</span>
-            <span class="skill-tag">AI-Assisted Dev</span>
-          </div>
-        </div>
-        <div class="skill-card" data-skill="cloud">
-          <div class="skill-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
-          </div>
-          <h3 class="skill-title">Cloud & DevOps</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">AWS</span>
-            <span class="skill-tag">Azure</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">Docker Compose</span>
-            <span class="skill-tag">Nginx</span>
-            <span class="skill-tag">GitLab CI</span>
-          </div>
-        </div>
-        <div class="skill-card" data-skill="architecture">
-          <div class="skill-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-          </div>
-          <h3 class="skill-title">Architecture & Design</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">System Design</span>
-            <span class="skill-tag">Scalable Arch</span>
-            <span class="skill-tag">Schema Design</span>
-            <span class="skill-tag">API Design</span>
-            <span class="skill-tag">UI/UX Design</span>
-            <span class="skill-tag">Design Patterns</span>
-          </div>
-        </div>
-        <div class="skill-card" data-skill="leadership">
-          <div class="skill-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3 class="skill-title">Leadership & Product</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Product Ownership</span>
-            <span class="skill-tag">Project Mgmt</span>
-            <span class="skill-tag">Proposal Writing</span>
-            <span class="skill-tag">Collaboration</span>
-            <span class="skill-tag">Mentoring</span>
-            <span class="skill-tag">Code Review</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section class="section" id="experience">
-    <div class="section-inner">
-      <div class="section-header reveal-up">
-        <span class="section-tag">03</span>
         <h2 class="section-title">Experience</h2>
         <div class="section-line"></div>
       </div>
@@ -388,6 +303,91 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">03</span>
+        <h2 class="section-title">Skills & Tech</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid reveal-up">
+        <div class="skill-card" data-skill="engineering">
+          <div class="skill-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="skill-title">Engineering</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">WebSocket</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="ai">
+          <div class="skill-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.93L12 22"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.57 3.25 3.93"/><path d="M9 12h6"/><path d="M8 16h8"/><path d="M9 20h6"/></svg>
+          </div>
+          <h3 class="skill-title">AI & Agentic Systems</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Agentic AI</span>
+            <span class="skill-tag">AI Workflows</span>
+            <span class="skill-tag">LLM Integration</span>
+            <span class="skill-tag">Voice AI</span>
+            <span class="skill-tag">AI-Assisted Dev</span>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="cloud">
+          <div class="skill-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          </div>
+          <h3 class="skill-title">Cloud & DevOps</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Docker Compose</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">GitLab CI</span>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="architecture">
+          <div class="skill-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3 class="skill-title">Architecture & Design</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">System Design</span>
+            <span class="skill-tag">Scalable Arch</span>
+            <span class="skill-tag">Schema Design</span>
+            <span class="skill-tag">API Design</span>
+            <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag">Design Patterns</span>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="leadership">
+          <div class="skill-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="skill-title">Leadership & Product</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Product Ownership</span>
+            <span class="skill-tag">Project Mgmt</span>
+            <span class="skill-tag">Proposal Writing</span>
+            <span class="skill-tag">Collaboration</span>
+            <span class="skill-tag">Mentoring</span>
+            <span class="skill-tag">Code Review</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
