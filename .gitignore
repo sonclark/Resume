@@ -10,3 +10,8 @@ Desktop.ini
 # Original resume PDF (optional - remove this line if you want it in the repo)
 # *.pdf
 !Nguyen Viet Son Resume -June 2026.pdf
+
+# Graphify & Agents
+.agents/
+.graphifyignore
+graphify-out/
